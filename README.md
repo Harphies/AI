@@ -22,4 +22,5 @@
   - Advanced Object Segmentation
 - Natural Language Processing
   - Speech to text
-  - Text to speech
+  - Text to speec
+  - Sentiment Analysis
