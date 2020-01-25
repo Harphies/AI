@@ -21,6 +21,24 @@
   - Object Detection
   - Advanced Object Segmentation
 - Natural Language Processing
+
   - Speech to text
   - Text to speec
   - Sentiment Analysis
+
+  ## Popular Types of Layes in DNNs
+
+  - Fully connected Layer
+    - Feed forward, fully connected
+    - Multilayer perceptrons
+  - Convolutional Layer
+    - Feed forward, sparsely-connected w/ weight sharing
+    - Convolutional Neural Network (CNN)
+    - Typical used for Images
+  - Recurrent Layer
+    - Feedback
+    - Recurrent Neural Network (RNN)
+    - Typically used for time-series/sequential data (e.g speech and language)
+  - Attention Layer/Mechanism
+    - Attention(matrix multiply) + feed forward, fully connected
+    - Transformer
