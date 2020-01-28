@@ -42,3 +42,14 @@
   - Attention Layer/Mechanism
     - Attention(matrix multiply) + feed forward, fully connected
     - Transformer
+
+## NLP Taks
+
+- Question and Answering
+- Machine Translation
+- Text Summarization
+- Sentiment Analysis
+- Text Categorization
+- Dialogue Systyms
+- Automated Girlfriend
+- Common Sense Reasoning.
