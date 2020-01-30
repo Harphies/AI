@@ -10,7 +10,8 @@
 
 - Modular Approach( sutibale for both pytorch and Keras implementation where we define sequential layers)
 - Manually building weight and bias (a low level approach suitable to reproduce deep learning architecture on a paper you just read or to develop a customized layer)
-- Extending model class approach
+- class based approach (Exdenting module class)
+- Sequential approach inside a class based approach (Mixed approach)
 
 ## This Github will entails more on;
 
