@@ -6,6 +6,12 @@
 
 ---
 
+## The 3 Approaches to defining a Neural Network / Deeo learning Implementation Architecture
+
+- Modular Approach( sutibale for both pytorch and Keras implementation where we define sequential layers)
+- Manually building weight and bias (a low level approach suitable to reproduce deep learning architecture on a paper you just read or to develop a customized layer)
+- Extending model class approach
+
 ## This Github will entails more on;
 
 - Machine learning
