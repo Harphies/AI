@@ -35,7 +35,7 @@
 
   ## Popular Types of Layes in DNNs
 
-  - Fully connected Layer
+  - Fully connected Layer (Dense)
     - Feed forward, fully connected
     - Multilayer perceptrons
   - Convolutional Layer
@@ -60,3 +60,11 @@
 - Dialogue Systyms
 - Automated Girlfriend
 - Common Sense Reasoning.
+
+# Computer Vision tasks
+
+- Image classification : The input to the problem is an image and the required output is simply a prediction of the class that Image belong to.
+
+- object dectection : The input to the problem is an Image and the required output are bounding boxes surrounding the detected objects.(identification of many classes in an image)
+- Instance segmentation: The input to the problem are images and the required output are pixels grouping that to each class
+- Image Recognition
