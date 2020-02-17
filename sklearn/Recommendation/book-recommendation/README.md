@@ -1,7 +1,7 @@
 # Book Recommendation Engine Using Machine Learning
 ___
 
-[MyBook]() Is a recommender engine built to help book lover read the best books that suit thier style from thier favorite authors or similar authors with great contents. This project uses [GoodRead]() user profile to recommed books for them using machine learning.
+[MyBook]() Is a recommender engine built to help book lovers read the best books that suit thier style from thier favorite authors or similar authors with great contents. This project uses [GoodRead]() user profile to recommed books for them using machine learning.
 
 
 # Table of Contents
