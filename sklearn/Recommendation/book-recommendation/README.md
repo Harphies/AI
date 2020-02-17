@@ -22,7 +22,8 @@ Recommendation Systems Recommendation system has become an integral part of many
 
 
 ## Project Structure
-- Requirements.txt contain all the packages used and thier versions for package management
+- The **Requirements.txt** file contain all the packages used and thier versions for package management.
+- The **README.md** file contain the project documentation including all the instructions to execute the project.
 - The **data** folder is where all the data for the project reside.
 - The **preprocessing** folder conatain all the preprocessing codes for data exploration, preparation and Visualization.
 - The **Util** folder conatain all the codes for utility functions/activities.
