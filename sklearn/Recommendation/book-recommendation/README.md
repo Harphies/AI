@@ -7,7 +7,7 @@ ___
 # Table of Contents
 - [Introduction](#introduction)
 - [How it works]()
-- [Project Structure]()
+- [Project Structure](#project-structure)
     - [Data Sources]()
     - [webApp]()
     - [File Structure]()
@@ -18,3 +18,13 @@ ___
 
 ## Introduction
 Recommendation Systems Recommendation system has become an integral part of many applications in recent time and mostly web applications. it's about recommending something to users based on thier preferences.
+
+
+
+## Project Structure
+- Requirements.txt contain all the packages used and thier versions for package management
+- The **data** folder is where all the data for the project reside.
+- The **preprocessing** folder conatain all the preprocessing codes for data exploration, preparation and Visualization.
+- The **Util** folder conatain all the codes for utility functions/activities.
+- The **WebApp** folder contain the deployment codes.
+- The **evaluation** folder contain the model evaluation metrics codes.
