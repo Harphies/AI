@@ -9,6 +9,7 @@ user-CF, item-CF have no inheritance
 
 from process import Movielens
 from process import Evaluation
+import metrics
 
 from surprise import KNNBasic
 from collections import defaultdict
@@ -185,3 +186,39 @@ class simple_CF():
             if rating == 5.0:
                 print(ml.get_movie_name(int(self.train_set.to_raw_iid(iid))))
         return test_user_inner_id
+
+    def recommendation_metrics(self, topN, test_user):
+        print('-hit_rate:', metrics.hit_rate(topN, self.test_set_looxv))
+        print('- rating_hit_rate:',
+              metrics.rating_hit_rate(topN, self.test_set_looxv))
+        # print('cummulative hit rate:', metrics.cummulative_hit_rate(topN, self.test_set_looxv))
+        # print(' - AverageReciprocal hitRate:', metrics.ARHR(topN, self.test_set_looxv))
+        print('Target user Top 8 List:')
+        counter = 0
+        for movie_id, score in topN[int(test_user)]:
+            print(ml.get_movie_name(int(movie_id)))
+            counter += 1
+            if counter > 7:
+                break
+
+
+t = time.time()
+ml = Movielens()
+rankings = ml.get_popularity_rating()
+cf = simple_CF(ml)
+print('Load data:', time.time() - t)
+
+user = cf.run_user_CF('cosine')
+
+
+pearson = cf.run_item_cf('pearson')
+cosine = cf.run_item_cf('cosine')
+msd = cf.run_item_cf('msd')
+
+
+model_size_10 = cf.run_item_cf('cosine', model_size=10)
+model_size_30 = cf.run_item_cf('cosine', model_size=30)
+model_size_50 = cf.run_item_cf('cosine', model_size=50)
+
+cf.recommendation_metrics(model_size_10, '56')
+cf.recommendation_metrics(user, '56')
