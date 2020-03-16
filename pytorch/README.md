@@ -1,4 +1,4 @@
-## My List of Pytorch Implementation Projects and practices
+## My curated list of Pytorch Implementations
 
 ## Beginner
 
