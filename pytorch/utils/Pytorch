@@ -1,6 +1,0 @@
-# pytorch essential docs to look up to often
-torch.autograd
-torch.nn
-torch.optim
-torch functional API
-torch sequential API
