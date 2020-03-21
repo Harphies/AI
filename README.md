@@ -51,7 +51,7 @@
   - Convolutional Layer
     - Feed forward, sparsely-connected / weight sharing
     - Convolutional Neural Network (CNN)
-    - Typical used for Images
+    - Typically used for Images
   - Recurrent Layer
     - Feedback
     - Recurrent Neural Network (RNN)
