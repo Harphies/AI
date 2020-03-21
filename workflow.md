@@ -10,11 +10,17 @@
 - hyperparameters definitions (deep learning)
 - load the data and explore
 
-# step 3: Define the model class
+# step 3: Define the arcitecture of the model such as
 
-- Define the architecture of the model and the hyperparameters
 - Define the init method
+
+  - The number of hidden units in the input layers; which is determined by the features of the data
+  - Number of total hidden layers in the model (iterative)
+  - Number of hidden units in each hidden layers (iterative)
+  - The output layer node units is determined by the intended outcome to achieve
+
 - Define the forward method
+  - make predictions
 
 # step 4: Loss and optimizer definition
 
