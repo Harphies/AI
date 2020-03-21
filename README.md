@@ -40,7 +40,7 @@
 - Natural Language Processing
 
   - Speech to text
-  - Text to speec
+  - Text to speech
   - Sentiment Analysis
 
   ## Popular Types of Layers in DNNs
