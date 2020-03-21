@@ -27,6 +27,12 @@
   - Self Supervised learning
   - Semi-Supervised Algorithms
   - Reinforcement learning
+- Recommendation Systems (Information retrieval)
+  - Content Based Filtering
+  - Collaborative Based Filtering
+    - Item Based
+    - User based
+  - Hybrid Systems
 - Computer Vision
   - Object Recognition
   - Object Detection
