@@ -2,13 +2,13 @@
 
 # step 1: package selection
 
-- Import all the packages into one cell of the Notebook (packages for data cleaning, model development and evaluation)
+- The first things is to import all the neccesary packages needed for this project (packages for data cleaning, model development and evaluation)
 
 # step 2: Settings
 
 - device configuration (pytorch)
-- hyperparameters definitions (deep learning)
-- load the data and explore
+- define all the hyperparameters to be used and need to be tuned to achieve a better accuracy
+- Load and explore the data
 
 # step 3: Define the arcitecture of the model such as
 
@@ -25,17 +25,18 @@
 # step 4: Loss and optimizer definition
 
 - Instantiate the model class
-- Select a loss metrics
-- Select an optimizer, preferably “Adam”
+- define the specific Loss function to be used either cross entropy, MSELoss, etc
+- define the optimization algorithm to be used either SGD, Adam, RMSprop, Momentum etc
 
 # step 5: Training process
 
 - Iterate through the data
+- Reset all the gradient to zero
 - Forward prop (making prediction i.e summation of all the layers (weight matrices and bias vector with their activation functions to compute the prediction)
 - Compute the cost function J (difference in the real output and the predicted output
 - Back prop to compute the gradient wrt J (objective function)
 - Updates the model parameters [weights and bias] (optimizer step)
 
-# step 6: Evaluation
+# step 6: Evaluation/Testing
 
 - print the metrics
