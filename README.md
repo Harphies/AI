@@ -33,6 +33,7 @@
     - Item Based
     - User Based
   - Hybrid Systems
+- Transfer Learning (domain adaptation)
 - Computer Vision
   - Object Recognition
   - Object Detection
