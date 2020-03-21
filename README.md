@@ -31,7 +31,7 @@
   - Content Based Filtering
   - Collaborative Based Filtering
     - Item Based
-    - User based
+    - User Based
   - Hybrid Systems
 - Computer Vision
   - Object Recognition
