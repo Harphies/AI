@@ -18,11 +18,15 @@
 - Machine learning
   - Multilayer perceptrons
   - Supervised learning Algorithms
-  - Unsupwrvised learning Algorithms
+    - Regression
+    - Classification
+  - Unsupervised learning Algorithms
+    - Autoencoders
+    - Generative Adversarial Networks
+    - Deep Belief Networks (stacked Restricted Boltzmann machine)
+  - Self Supervised learning
   - Semi-Supervised Algorithms
   - Reinforcement learning
-  - Classifications
-  - Regressions
 - Computer Vision
   - Object Recognition
   - Object Detection
@@ -33,13 +37,13 @@
   - Text to speec
   - Sentiment Analysis
 
-  ## Popular Types of Layes in DNNs
+  ## Popular Types of Layers in DNNs
 
   - Fully connected Layer (Dense)
     - Feed forward, fully connected
     - Multilayer perceptrons
   - Convolutional Layer
-    - Feed forward, sparsely-connected w/ weight sharing
+    - Feed forward, sparsely-connected / weight sharing
     - Convolutional Neural Network (CNN)
     - Typical used for Images
   - Recurrent Layer
