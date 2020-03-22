@@ -10,7 +10,7 @@
   - [Multilayer Perceptron]()
   - [Multilayer Perceptron with dropout]()
   - [Multilayer Perceptron with Batch Normalization]()
-  - [Multilayer perceptron with Back Propagation from Scath]()
+  - [Multilayer perceptron with Back Propagation from Scrath]()
 
 ## Intermediate
 
