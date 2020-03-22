@@ -47,8 +47,7 @@
   ## Popular Types of Layers in DNNs
 
   - Fully connected Layer (Dense)
-    - Feed forward, fully connected
-    - Multilayer perceptrons
+    - Feedforward Neural Networks is also called Multilayer perceptrons
   - Convolutional Layer
     - Feed forward, sparsely-connected / weight sharing
     - Convolutional Neural Network (CNN)
