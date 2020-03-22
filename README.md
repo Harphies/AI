@@ -35,7 +35,7 @@
   - Hybrid Systems
 - Transfer Learning (domain adaptation)
 - Computer Vision
-  - Object Recognition
+  - Image Recognition
   - Object Detection
   - Advanced Object Segmentation
 - Natural Language Processing
