@@ -10,8 +10,9 @@
 - define all the hyperparameters to be used and need to be tuned to achieve a better accuracy
 - Load and explore the data
 
-# step 3: Define the arcitecture of the model such as
+# step 3: Define the architecture of the model such as
 
+- Define the architecture diagramatic representation
 - Define the init method
 
   - The number of hidden units in the input layers; which is determined by the features of the data
@@ -20,6 +21,7 @@
   - The output layer node units is determined by the intended outcome to achieve
 
 - Define the forward method
+  - establish connects among the layers.
   - make predictions
 
 # step 4: Loss and optimizer definition
@@ -28,7 +30,9 @@
 - define the specific Loss function to be used either cross entropy, MSELoss, etc
 - define the optimization algorithm to be used either SGD, Adam, RMSprop, Momentum etc
 
-# step 5: Training process
+# step 5: A custom function to print accuracy
+
+# step 6: Training process
 
 - Iterate through the data
 - Reset all the gradient to zero
