@@ -40,6 +40,7 @@
 - Compute the cost function J (difference in the real output and the predicted output
 - Back prop to compute the gradient wrt J (objective function)
 - Updates the model parameters [weights and bias] (optimizer step)
+- Logging (print the metrics)
 
 # step 6: Evaluation/Testing
 
