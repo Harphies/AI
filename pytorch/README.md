@@ -6,7 +6,7 @@
   - [Linear Regression](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/basic-ml/LinearRegression)
   - [Logistic Regression](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/basic-ml/LogisticRegression)
 - Fully connected layers
-  - [Feed Forward Neural Networks also called Multilayer perceptrons](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/basic-ml/Feedforward%20Neural%20Networks)
+  - [FeedForward Neural Networks also called Multilayer perceptrons](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/basic-ml/Feedforward%20Neural%20Networks)
   - [Multilayer Perceptron](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/basic-ml/Multilayer%20perceptron)
   - [Multilayer Perceptron with dropout](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/basic-ml/MultiLayer%20Perceptron%20with%20dropout)
   - [Multilayer Perceptron with Batch Normalization]()
