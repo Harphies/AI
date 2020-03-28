@@ -13,4 +13,6 @@
 
 ## Intermediate
 
+- [Convolutional Neural Network](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn)
+
 ## Advanced
