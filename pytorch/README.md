@@ -16,4 +16,8 @@
 - [Convolutional Neural Network](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/ConvandPoolLayers)
 - [Convolutional Networks with all Layers fully conv layers](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/AllConvLayers)
 
+# Classic Networks
+
+- [LeNet-5 MNIST Digits Classifier](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/LeNet-5%20MNIST)
+
 ## Advanced
