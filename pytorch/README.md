@@ -20,5 +20,6 @@
 
 - [LeNet-5 MNIST Digits Classifier](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/LeNet-5%20MNIST)
 - [LeNet-5 CIFAR10 Classifier](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/LeNet-5%20Cifar10)
+- [AlexNet CIFAR10 Classifier](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/AlexNet%20Cifar10)
 
 ## Advanced
