@@ -10,7 +10,7 @@
 
 - Modular Approach( sutibale for both pytorch and Keras implementation where we define sequential layers)
 - Manually building weight and bias (a low level approach suitable to reproduce deep learning architecture on a paper you just read or to develop a customized layer)
-- class based approach (Exdenting module class)
+- class based approach (Extending module class)
 - Sequential approach inside a class based approach (Mixed approach)
 
 ## This Github will entails more on;
@@ -39,6 +39,7 @@
   - Object Detection
   - Advanced Object Segmentation
 - Natural Language Processing
+- Speech Recognition
 
   - Speech to text
   - Text to speech
