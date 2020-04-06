@@ -69,7 +69,7 @@
 - Music Generation
 - DNA Sequence Analysis
 - Video Activity Recognition
-- Name Entity Recognition
+- Name Entity Recognition (NER)
 - Emojify
 
   ## Popular Types of Layers in DNNs
