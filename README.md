@@ -18,6 +18,8 @@
 - Machine learning
   - Supervised learning Algorithms
     - Regression
+      - Linear Regression
+      - Logistics Regression
     - Classification
       - Binary Classifications
       - Multi-class classifications
