@@ -10,7 +10,7 @@
 
 - Machine learning
   - Supervised learning Algorithms
-    - Regression
+    - Regression (where the output variable is a real value such as unique number, dollars, salary, weights or pressure)
       - Linear Regression
       - Logistic Regression
     - Classification
@@ -29,6 +29,8 @@
       - Gated Recurrent Unit (GRU) (Unidirectional and Bidirectional)
       - Attention mechanism
   - Unsupervised learning Algorithms
+    - Clustering: Organizing unlabelled data into similar groups called cluster.The primary goal is to find similarities in the data points and group similar data points into cluster.
+    - Anomaly Detection: It's the method of identifying rare items, events or observations which differ significantly from the majority of the data. We generally look for anomalies or ouliers in the data because they are suspicious. It's often used in Bank and Medical Error detection.
     - Autoencoders
     - Generative Adversarial Networks (GAN)
     - Deep Belief Networks (stacked Restricted Boltzmann machine)

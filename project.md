@@ -9,3 +9,14 @@
 - Breast Cancer Diagnosis
 - Heart disease classifier
 - Malaria Infection Prediction
+
+# Supervised Learning Projects
+
+- Text Categorization
+- Face Detection
+- Signature Recognition
+- Customer Discovery
+- Spam dDetection
+- Weather Forecasting
+- Predicting House Prices based on the Prevailing Market Price
+- Stock price Predictions
