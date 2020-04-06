@@ -77,6 +77,7 @@
 - DNA Sequence Analysis
 - Video Activity Recognition
 - Name Entity Recognition
+- Emojify
 
   ## Popular Types of Layers in DNNs
 
