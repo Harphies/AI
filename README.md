@@ -49,16 +49,34 @@
     - User Based
   - Hybrid Systems
 - Transfer Learning (domain adaptation)
+  - Working with pretrained models
+
+## Application Areas
+
 - Computer Vision
+
   - Image Recognition
   - Object Detection
   - Advanced Object Segmentation
-- Natural Language Processing
-- Speech Recognition
+  - Neural Style Transfer
 
-  - Speech to text
-  - Text to speech
-  - Sentiment Analysis
+- Sequence Modelling
+
+  - Natural Language Processing
+
+    - Sentiment Analysis
+    - Neural Machine Translation
+    - Character level language modelling for text generatio
+    - Poem generation
+
+  - Speech Recognition
+
+    - Trigger word detection
+
+- Music Generation
+- DNA Sequence Analysis
+- Video Activity Recognition
+- Name Entity Recognition
 
   ## Popular Types of Layers in DNNs
 
@@ -75,17 +93,6 @@
   - Attention Layer/Mechanism
     - Attention(matrix multiply) + feed forward, fully connected
     - Transformer
-
-## NLP Taks
-
-- Question and Answering
-- Machine Translation
-- Text Summarization
-- Sentiment Analysis
-- Text Categorization
-- Dialogue Systyms
-- Automated Girlfriend
-- Common Sense Reasoning.
 
 # Computer Vision tasks
 
