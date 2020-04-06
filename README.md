@@ -28,10 +28,12 @@
     - Multilayer perceptrons/ Feedforward Networks
     - Convolutional Neural Networks
       - Regional Convolutional Neural Networks (R-CNN)
+      - Fast R-CNN
+      - Faster R-CNN
     - Recurrent Neural Networks
-      - Basic RNN
-      - LSTM (Long short term Memory)
-      - Gated Recurrent Unit (GRU)
+      - Basic RNN (Unidirectional and Bidirectional)
+      - LSTM (Long short term Memory) (Unidirectional and Bidirectional)
+      - Gated Recurrent Unit (GRU) (Unidirectional and Bidirectional)
       - Attention mechanism
   - Unsupervised learning Algorithms
     - Autoencoders
