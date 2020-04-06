@@ -103,7 +103,7 @@
 
 ## The 3 Approaches to defining a Neural Network / Deep learning Implementation Architecture
 
+- Class based approach (Extending module class)
 - Modular Approach( sutibale for both pytorch and Keras implementation where we define sequential layers)
-- Manually building weight and bias (a low level approach suitable to reproduce deep learning architecture on a paper you just read or to develop a customized layer)
-- class based approach (Extending module class)
 - Sequential approach inside a class based approach (Mixed approach)
+- Manually building weight and bias (a low level approach suitable to reproduce deep learning architecture on a paper you just read or to develop a customized layer)
