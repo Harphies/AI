@@ -22,5 +22,6 @@
 - [LeNet-5 CIFAR10 Classifier](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/LeNet-5%20Cifar10)
 - [AlexNet CIFAR10 Classifier](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/AlexNet%20Cifar10)
 - [VGG16 Architecture from scratch](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/VGG)
+- [VGG16 DogvsCat Binary Classification](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/VGG-dog%20classifier)
 
 ## Advanced
