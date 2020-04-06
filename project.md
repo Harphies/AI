@@ -2,3 +2,4 @@
 
 - Predicting Visa Application Rejection
 - Predicting Hotel Reservation
+- Detecting Medical Fraud using Autoencoder for Anomaly detection
