@@ -55,9 +55,9 @@
 
 - Computer Vision
 
-  - Image Recognition
-  - Object Detection
-  - Advanced Object Segmentation
+  - Image classification: The input to the problem is an image and the required output is simply a prediction of the class that Image belong to.
+  - Object Detection: The input to the problem is an Image and the required output are bounding boxes surrounding the detected objects.(identification of many classes in an image)
+  - Advanced Object Segmentation: The input to the problem are images and the required output are pixels grouping that to each class
   - Neural Style Transfer
 
 - Sequence Modelling
@@ -95,10 +95,14 @@
     - Attention(matrix multiply) + feed forward, fully connected
     - Transformer
 
-# Computer Vision tasks
+# Types of data Neural Network and machine Learning work with
 
-- Image classification : The input to the problem is an image and the required output is simply a prediction of the class that Image belong to.
-
-- object dectection : The input to the problem is an Image and the required output are bounding boxes surrounding the detected objects.(identification of many classes in an image)
-- Instance segmentation: The input to the problem are images and the required output are pixels grouping that to each class
-- Image Recognition
+- Structured data
+  - Tabular data (rows and column)
+    - Spread sheets (csv)
+  - Time series data
+- Unstructured data
+  - Image data
+  - Volumetric data (3D)
+  - Text data
+  - Audio data
