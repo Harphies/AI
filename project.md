@@ -2,6 +2,7 @@
 
 - Predicting Visa Application Rejection
 - Predicting Hotel Reservation
+- Gender Classifier (Male or Female) from Pictures
 
 # Health
 
