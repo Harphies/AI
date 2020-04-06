@@ -21,7 +21,9 @@
 - Predicting House Prices based on the Prevailing Market Price
 - Stock price Predictions
 
-**Unsupervised Learning Projects** This is a method that trains machine to use data that is neither classified nor labelled. It means no training data can be provided and the machine is made to learn by itself. The machine must be able to classify the data without any prior information about the data.
+# Unsupervised Learning Projects
+
+This is a method that trains machine to use data that is neither classified nor labelled. It means no training data can be provided and the machine is made to learn by itself. The machine must be able to classify the data without any prior information about the data.
 
 - Fraud detection
 - Malware detection
