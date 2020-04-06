@@ -16,13 +16,24 @@
 ## This Github will entails more on;
 
 - Machine learning
-  - Multilayer perceptrons
   - Supervised learning Algorithms
     - Regression
     - Classification
+      - Binary Classifications
+      - Multi-class classifications
+      - Ordinal Classifications
+  - Neural Networks and Deep Neural Networks (Deep Learning)
+    - Multilayer perceptrons/ Feedforward Networks
+    - Convolutional Neural Networks
+      - Regional Convolutional Neural Networks (R-CNN)
+    - Recurrent Neural Networks
+      - Basic RNN
+      - LSTM (Long short term Memory)
+      - Gated Recurrent Unit (GRU)
+      - Attention mechanism
   - Unsupervised learning Algorithms
     - Autoencoders
-    - Generative Adversarial Networks
+    - Generative Adversarial Networks (GAN)
     - Deep Belief Networks (stacked Restricted Boltzmann machine)
   - Self Supervised learning
   - Semi-Supervised Algorithms
