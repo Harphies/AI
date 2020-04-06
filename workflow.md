@@ -1,16 +1,22 @@
-## My deep learning workflow
+## My deep learning and Machine Learning Workflow
 
-# step 1: package selection
+### Step 1:Domian Level Knowledge
 
-- The first things is to import all the neccesary packages needed for this project (packages for data cleaning, model development and evaluation)
+- Try to understand the overall goal of the project.
+- Have a deep understanding about the problem to solve as it'll pretty much make it much easier to know what type of architecture (overall structure) to use and type of data to collect
+- Understand the type of data available to work with or type of data to collect if there is no available data (Tabular data, time series, image, audio, volumetric etc.)
 
-# step 2: Settings
+# Step 2: Packages Selection
+
+- The first things is to import all the neccesary packages needed for this project (packages for data cleaning, model development, evaluation/Testing and deployment of the model)
+
+# Step 3: Settings
 
 - device configuration (pytorch)
-- define all the hyperparameters to be used and need to be tuned to achieve a better accuracy
+- define all the hyperparameters to be used and needed to be tuned to achieve a better accuracy
 - Load and explore the data
 
-# step 3: Define the architecture of the model such as
+# Step 3: Define the architecture of the model such as
 
 - Define the architecture diagramatic representation
 - Define the init method

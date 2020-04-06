@@ -1,18 +1,4 @@
-## List of my awesome Projects and their Rsources for a quick reference
+## List Projects to try out for learning and moving to mastery
 
-- Employee Salary Prediction
-
-  - [Github Url](https://github.com/Harphies/salary-prediction)
-  - [Deployed version](https://salaryforcast.herokuapp.com/)
-  - [Blog Post](https://harphies.tech/blogs/ai-recruit)
-
-- Movie Recommendation Systems
-
-  - [Github Url]()
-  - [Deployed version]()
-  - [Blog Post]()
-
-- US Airline Sentiment Analysis
-  - [Github Url]()
-  - [Deployed version]()
-  - [Blog Post]()
+- Predicting Visa Application Rejection
+- Predicting Hotel Reservation
