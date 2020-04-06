@@ -104,5 +104,6 @@
 - Unstructured data
   - Image data
   - Volumetric data (3D)
+    - Computed tomography (CT) scans
   - Text data
   - Audio data
