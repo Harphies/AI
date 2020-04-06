@@ -16,7 +16,7 @@
 - define all the hyperparameters to be used and needed to be tuned to achieve a better accuracy
 - Load and explore the data
 
-# Step 3: Define the architecture of the model such as
+# Step 4: Define the architecture of the model such as
 
 - Define the architecture diagramatic representation
 - Define the init method
@@ -30,15 +30,17 @@
   - establish connects among the layers.
   - make predictions
 
-# step 4: Loss and optimizer definition
+# Step 5: Loss and optimizer definition
 
 - Instantiate the model class
-- define the specific Loss function to be used either cross entropy, MSELoss, etc
-- define the optimization algorithm to be used either SGD, Adam, RMSprop, Momentum etc
+- Define the specific Loss function to be used either cross entropy, MSELoss, etc
+- Note (Mean suare error and Mean absolute errors are not meant to be used with deep learning)
+- Define the optimization algorithm to be used either SGD, Adam, RMSprop, Momentum etc
+- Note: Adam optimizer works best
 
-# step 5: A custom function to print accuracy
+# Step 6: A custom function to print accuracy
 
-# step 6: Training process
+# Step 7: Training process
 
 - Iterate through the data
 - Reset all the gradient to zero
@@ -48,6 +50,6 @@
 - Updates the model parameters [weights and bias] (optimizer step)
 - Logging (print the metrics)
 
-# step 6: Evaluation/Testing
+# Step 8: Evaluation/Testing
 
 - print the metrics
