@@ -2,4 +2,10 @@
 
 - Predicting Visa Application Rejection
 - Predicting Hotel Reservation
+
+# Health
+
 - Detecting Medical Fraud using Autoencoder for Anomaly detection
+- Breast Cancer Diagnosis
+- Heart disease classifier
+- Malaria Infection Prediction
