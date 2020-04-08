@@ -1,5 +1,6 @@
 ## List Projects to try out for learning and moving to mastery
 
+- Time Series Forecasting / Time series prediction
 - Predicting Visa Application Rejection
 - Predicting Hotel Reservation
 - Gender Classifier (Male or Female) from Pictures
