@@ -96,6 +96,8 @@
   - Tabular data (rows and column)
     - Spread sheets (csv)
   - Time series data
+    - Univariate
+    - Multivariate
 - Unstructured data
   - Image data
   - Volumetric data (3D)
