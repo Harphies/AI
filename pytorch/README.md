@@ -24,4 +24,8 @@
 - [VGG16 Architecture from scratch](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/VGG)
 - [VGG16 DogvsCat Binary Classification](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/VGG-dog%20classifier)
 
+## Transfer Learning
+
+- [VGG16 Pretrained Model](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/transfer%20learning/VGG16)
+
 ## Advanced
