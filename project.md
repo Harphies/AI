@@ -1,4 +1,4 @@
-## List Projects to try out for learning and moving to mastery
+## List of projects to try out for learning and moving to mastery
 
 - Time Series Forecasting / Time series prediction
 - Predicting Visa Application Rejection
