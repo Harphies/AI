@@ -9,7 +9,7 @@
   - [FeedForward Neural Networks also called Multilayer perceptrons](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/Neural%20Networks/Feedforward%20Neural%20Networks)
   - [Multilayer Perceptron](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/Neural%20Networks/Multilayer%20perceptron)
   - [Multilayer Perceptron with dropout](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/Neural%20Networks/MultiLayer%20Perceptron%20with%20dropout)
-  - [Multilayer Perceptron with Batch Normalization](hhttps://github.com/Harphies/deeplearning-models/tree/master/pytorch/Neural%20Networks/MultiLayer%20Perceptron%20with%20BatchNormalization)
+  - [Multilayer Perceptron with Batch Normalization](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/Neural%20Networks/MultiLayer%20Perceptron%20with%20BatchNormalization)
 
 ## Intermediate
 
