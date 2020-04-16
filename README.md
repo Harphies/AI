@@ -34,7 +34,7 @@
     - Autoencoders
       - FeedForword Autoencoder (Using Linear Layers to construct the Encoder and the Decoder components)
       - Convolutional Autoencoder (Using Convolutional Layers to construct the Encoder and Decoder or ConvolutionTranspose to construct the Decoder)
-      - LSTM Autoecoder (Using LSTM to construct the Encoder and the Decoder )
+      - LSTM Autoencoder (Using LSTM to construct the Encoder and the Decoder )
     - Generative Adversarial Networks (GAN)
     - Deep Belief Networks (stacked Restricted Boltzmann machine)
   - Self Supervised learning
