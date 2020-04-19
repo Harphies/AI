@@ -4,7 +4,7 @@
   - Data Exploration and Visualization
 - Model Development
   - developing several machine learning and deep learning architectures
-- Deployment : Using the model in production environmnet such as
+- Deployment : Using the model in production environment such as
   - Deploying on a Mobile Application: model compression to smaller footprint before usage
   - Deploying on Web Application
   - Deploying on embedded devices
