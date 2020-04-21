@@ -29,3 +29,5 @@
 - [VGG16 Pretrained Model](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/transfer%20learning/VGG16)
 
 ## Advanced
+
+- [Image Captioning with CNN and RNN](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/Image%20Captioning)
