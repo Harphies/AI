@@ -31,3 +31,5 @@
 ## Advanced
 
 - [Image Captioning with CNN and RNN](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/Image%20Captioning)
+
+- [Generative Adversarial Network](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/Neural%20Networks/Generative%20Adversarial%20Networks)
