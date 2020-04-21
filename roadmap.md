@@ -9,7 +9,7 @@
 
 # Engineer Path
 
-# Step 1: Take Peofessional Courses on Machine Learning
+# Step 1: Take Professional Courses on Machine Learning
 
 - Coursera Machine Learning
 - Udemy courses on specific Topics
