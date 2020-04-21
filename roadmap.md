@@ -17,7 +17,7 @@
 - Udacity Nano degree courses
 - Take Deep learning Specializaton Course on Coursera
 - Read the deep learning Book by Ian Goodfellow et-al
-- Implent more projects to get better and master how the learned concepts really work.
+- Implement more projects to get better and master how the learned concepts really work.
 - Read documentation of popular framework of your choice (Pytorch, keras, tensorflow, scikit-learn etc.)
 - Read more research papers
 - Learn to interprete research papers so you can be able to use research outputs to build better products.
