@@ -32,10 +32,13 @@
     - Clustering: Organizing unlabelled data into similar groups called cluster.The primary goal is to find similarities in the data points and group similar data points into cluster.
     - Anomaly Detection: It's the method of identifying rare items, events or observations which differ significantly from the majority of the data. We generally look for anomalies or ouliers in the data because they are suspicious. It's often used in Bank and Medical Error detection.
     - Autoencoders
-      - FeedForward Autoencoder (Using Linear Layers to construct the Encoder and the Decoder components)
-      - Convolutional Autoencoder (Using Convolutional Layers to construct the Encoder and Decoder or ConvolutionTranspose to construct the Decoder)
-      - LSTM Autoencoder (Using LSTM to construct the Encoder and the Decoder )
+      - Sparse Autoencoder (SAE)
+      - Denoising Autoencoder (DAE)
+      - Varational Autoencoder (VAE)
     - Generative Adversarial Networks (GAN)
+      - Vanilla GAN
+      - Wasserstein GAN (WGAN)
+      - Wasserstein GAN -Gradient Penalty (WGAN-GP)
     - Deep Belief Networks (stacked Restricted Boltzmann machine)
   - Self Supervised learning
   - Semi-Supervised Algorithms
@@ -48,6 +51,10 @@
   - Hybrid Systems
 - Transfer Learning (domain adaptation)
   - Working with pretrained models
+- Transformer achitectures
+  - BERT
+  - GPT-2
+  - T5
 
 ## Application Areas
 
@@ -64,8 +71,14 @@
 
     - Sentiment Analysis
     - Neural Machine Translation
-    - Character level language modelling for text generatio
-    - Poem generation
+    - Question Answering
+    - Summarization (summarization of paper, Newspaper, Book etc.)
+    - Language Modelling
+      - Word level modelling
+      - Character level modelling
+    - Semantic Equivalence
+    - Entailment
+    - Optical Character Recognition
 
   - Speech Recognition
 
