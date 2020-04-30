@@ -28,6 +28,10 @@
 
 - [VGG16 Pretrained Model](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/transfer%20learning/VGG16)
 
+## Recurrent Neural Networks
+
+- [Basic RNN](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/RNN/Basic-RNN)
+
 ## Advanced
 
 - [Image Captioning with CNN and RNN](https://github.com/Harphies/deeplearning-models/tree/master/pytorch/cnn/Image%20Captioning)
