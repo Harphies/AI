@@ -2,6 +2,7 @@
 
 - [Projects](https://data-flair.training/blogs/deep-learning-project-ideas/)
 - [sharmaroshan](https://github.com/sharmaroshan)
+- [rwightman](https://github.com/rwightman)
 - [Sebastian Raschka](https://github.com/rasbt/deeplearning-models)
 - [ZakiaSalod](https://github.com/ZakiaSalod)
 - [Curiousily](https://github.com/curiousily)
