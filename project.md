@@ -31,3 +31,7 @@ This is a method that trains machine to use data that is neither classified nor 
 - Malware detection
 - Identification of human errors during data entry
 - Conducting accurate basket analysis etc.
+
+## General
+
+- Action recognition in video
