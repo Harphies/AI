@@ -1,6 +1,7 @@
 # List of Awesome deep learning Repos
 
 - [Paper to Code](https://paperswithcode.com/)
+- [MedicalZooPytorch](https://github.com/IliasPap/MedicalZooPytorch)
 - [Projects](https://data-flair.training/blogs/deep-learning-project-ideas/)
 - [sharmaroshan](https://github.com/sharmaroshan)
 - [rwightman](https://github.com/rwightman)
