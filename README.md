@@ -33,6 +33,9 @@
         - GPT-2
         - T5
       - Attention mechanism
+        - Attention with RNN Network
+        - Attention with LSTM Layer
+        - Attention with Encoder-decoder Network
   - Unsupervised learning Algorithms
     - Clustering: Organizing unlabelled data into similar groups called cluster.The primary goal is to find similarities in the data points and group similar data points into cluster.
     - Anomaly Detection: It's the method of identifying rare items, events or observations which differ significantly from the majority of the data. We generally look for anomalies or ouliers in the data because they are suspicious. It's often used in Bank and Medical Error detection.
