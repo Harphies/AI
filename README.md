@@ -27,6 +27,11 @@
       - Basic RNN (Unidirectional and Bidirectional)
       - LSTM (Long short term Memory) (Unidirectional and Bidirectional)
       - Gated Recurrent Unit (GRU) (Unidirectional and Bidirectional)
+      - Encoder- decoder Network
+      - Transformer architectures
+        - BERT
+        - GPT-2
+        - T5
       - Attention mechanism
   - Unsupervised learning Algorithms
     - Clustering: Organizing unlabelled data into similar groups called cluster.The primary goal is to find similarities in the data points and group similar data points into cluster.
@@ -51,10 +56,6 @@
   - Hybrid Systems
 - Transfer Learning (domain adaptation)
   - Working with pretrained models
-- Transformer achitectures
-  - BERT
-  - GPT-2
-  - T5
 
 ## Application Areas
 
