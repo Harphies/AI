@@ -32,6 +32,7 @@
         - BERT
         - GPT-2
         - T5
+        - MuseNet
       - Attention mechanism
         - Attention with RNN Network
         - Attention with LSTM Layer
