@@ -2,9 +2,9 @@
 
 ### Step 1:Domian Level Knowledge
 
-- Try to understand the overall goal of the project.
+- Try to understand the overall goal of the project. i.e (The Business Needs/ requirement)
 - Have a deep understanding about the problem to solve as it'll pretty much make it much easier to know what type of architecture (overall structure) to use and type of data to collect
-- Understand the type of data available to work with or type of data to collect if there is no available data (Tabular data, time series, image, audio, volumetric etc.)
+- Understand the type of data available to work with or type of data to collect if there is no available data (Tabular data, time series, image, audio, volumetric, text etc.)
 
 # Step 2: Packages Selection
 
