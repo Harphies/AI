@@ -9,3 +9,6 @@
 - ReLU is always a good choice of activation function for hidden layers.
 - Generative Adversarial Networks (GAN) Variants are suitable for image based generative modelling
 - Transformer architectue variants are suitable for text and audio based generative modelling
+- The seed value needs to be the same in the research and the production environment.
+- Replacing the missing values with th mode value in the training set and the test set is a common practice in data science.
+- We don't deploy just the machine learning or deep learning algorithm, we deploy the entire pipeline from data analysis to feature engineering to feature selection to the model.
