@@ -7,3 +7,5 @@
 - Mean squared error and Mean Absolute Error are not suitable for deep learning models metric evaluation
 - Adam optimzer is always a good choice of optimizer
 - ReLU is always a good choice of activation function for hidden layers.
+- Generative Adversarial Networks (GAN) Variants are suitable for image based generative modelling
+- Transformer architectue variants are suitable for text and audio based generative modelling

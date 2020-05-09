@@ -48,6 +48,10 @@
       - Vanilla GAN
       - Wasserstein GAN (WGAN)
       - Wasserstein GAN -Gradient Penalty (WGAN-GP)
+      - CycleGAN
+      - StyleGAN
+      - ProGAN
+      - SAGAN(self-attention)
     - Deep Belief Networks (stacked Restricted Boltzmann machine)
   - Self Supervised learning
   - Semi-Supervised Algorithms
