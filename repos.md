@@ -8,6 +8,7 @@
 - [Eric](https://github.com/eriklindernoren)
 - [Sebastian Raschka](https://github.com/rasbt/deeplearning-models)
 - [ZakiaSalod](https://github.com/ZakiaSalod)
+- [ujj](https://github.com/ujjwalkarn)
 - [Curiousily](https://github.com/curiousily)
 - [yunjey](https://github.com/yunjey/pytorch-tutorial)
 - [Generative Deep Learning Models](https://github.com/MLSlayer/Generative-Deep-Learning-Code-in-Pytorch)
