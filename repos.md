@@ -4,6 +4,8 @@
 - [MedicalZooPytorch](https://github.com/IliasPap/MedicalZooPytorch)
 - [Projects](https://data-flair.training/blogs/deep-learning-project-ideas/)
 - [sharmaroshan](https://github.com/sharmaroshan)
+- [Bhatt](https://github.com/bhattbhavesh91)
+- [mdh266](https://github.com/mdh266)
 - [rwightman](https://github.com/rwightman)
 - [Eric](https://github.com/eriklindernoren)
 - [Sebastian Raschka](https://github.com/rasbt/deeplearning-models)
