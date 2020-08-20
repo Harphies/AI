@@ -1,6 +1,7 @@
 # List of Awesome deep learning Repos
 
 - [Paper to Code](https://paperswithcode.com/)
+- [Made with ML](https://madewithml.com/)
 - [MedicalZooPytorch](https://github.com/IliasPap/MedicalZooPytorch)
 - [Projects](https://data-flair.training/blogs/deep-learning-project-ideas/)
 - [sharmaroshan](https://github.com/sharmaroshan)
@@ -16,7 +17,7 @@
 - [Generative Deep Learning Models](https://github.com/MLSlayer/Generative-Deep-Learning-Code-in-Pytorch)
 - [sarkar](https://github.com/tirthajyoti?tab=repositories)
 - [BaterMJ](https://github.com/batermj)
-- [NIrantk](https://github.com/NirantK)
+- [Nirantk](https://github.com/NirantK)
 - [awesome](https://github.com/NirantK/awesome)
 - [Sam](https://github.com/SamLynnEvans?tab=repositories)
 - [Krish Naik](https://github.com/krishnaik06)
