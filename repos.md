@@ -6,6 +6,7 @@
 - [Projects](https://data-flair.training/blogs/deep-learning-project-ideas/)
 - [sharmaroshan](https://github.com/sharmaroshan)
 - [Jeff heaton](https://github.com/jeffheaton?tab=repositories)
+- [Adrian Rosebrock](https://github.com/jrosebr1?tab=repositories)
 - [Bhatt](https://github.com/bhattbhavesh91)
 - [rwightman](https://github.com/rwightman/pytorch-image-models)
 - [deploy pytorch model](https://github.com/imadelh/ML-web-app)
