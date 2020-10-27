@@ -3,8 +3,17 @@
 ## categories of computer vision
 
 - Object detection/ recognition
+- Object localization
 - Image Classification
 - Image Segmentation
+
+## Object detection Algorithms
+
+- Fast R-CNN
+- Faster R-CNN
+- Single Shot Detection (SSD)
+- Histogram of oriented gradient (HOG)
+- YOLO (You only look once)
 
 ## Some Image processing tasks
 
