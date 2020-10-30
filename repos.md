@@ -2,6 +2,7 @@
 
 - [Paper to Code](https://paperswithcode.com/)
 - [Made with ML](https://madewithml.com/)
+- [pavansai tadepalli](https://github.com/pavansai26?tab=repositories)
 - [MedicalZooPytorch](https://github.com/IliasPap/MedicalZooPytorch)
 - [Projects](https://data-flair.training/blogs/deep-learning-project-ideas/)
 - [sharmaroshan](https://github.com/sharmaroshan)
