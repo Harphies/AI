@@ -3,9 +3,12 @@
 - [Paper to Code](https://paperswithcode.com/)
 - [Made with ML](https://madewithml.com/)
 - [pavansai tadepalli](https://github.com/pavansai26?tab=repositories)
+- [Kamal Raj](https://github.com/kamalkraj)
 - [MedicalZooPytorch](https://github.com/IliasPap/MedicalZooPytorch)
 - [Projects](https://data-flair.training/blogs/deep-learning-project-ideas/)
 - [sharmaroshan](https://github.com/sharmaroshan)
+- [Phil Wang
+  ](https://github.com/lucidrains)
 - [Jeff heaton](https://github.com/jeffheaton?tab=repositories)
 - [Adrian Rosebrock](https://github.com/jrosebr1?tab=repositories)
 - [Bhatt](https://github.com/bhattbhavesh91)
