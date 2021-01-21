@@ -1,7 +1,7 @@
 ## Question Answring System
 
-- The system is a simple Pytorch transformer also known as pytorch trained bert to perfrom question and answering system using gradio as the UI Interface to provide input to the model.
-- The model is also working as a callable REST API
+- The system is a simple Pytorch transformer also known as pytorch pretrained BERT to perfrom question and answering system using gradio as the UI Interface to provide input to the model.
+- The model is also working as a callable REST API endpoint.
 
 ## References
 
