@@ -2,10 +2,10 @@
 Read images and corresponding labels.
 """
 
+import os
 import torch
 from torch.utils.data import Dataset
 from PIL import Image
-import os
 
 
 class ChestXrayDataset(Dataset):
@@ -33,7 +33,7 @@ class ChestXrayDataset(Dataset):
         self.labels = labels
         self.transform = transform
 
-    def __getimage__(self, index):
+    def __getitem__(self, index):
         """
         Args:
             index: the index of image
