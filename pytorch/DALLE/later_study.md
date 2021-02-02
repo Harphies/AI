@@ -8,3 +8,9 @@
 
 - https://twine.readthedocs.io/en/latest/
 - https://packaging.python.org/tutorials/packaging-projects/
+
+```bash
+torch.einsum
+torch.finfo
+
+```
