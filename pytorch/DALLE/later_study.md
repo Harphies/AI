@@ -3,6 +3,7 @@
 - Microsoft deep speed
 - einops and einsum
 - axial positional embeddings
+- sparse attention
 
 ## References
 
@@ -12,5 +13,6 @@
 ```bash
 torch.einsum
 torch.finfo
+cast_tuple
 
 ```

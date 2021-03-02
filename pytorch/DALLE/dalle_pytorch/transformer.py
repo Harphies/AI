@@ -109,3 +109,111 @@ class Attention(nn.Module):
         out = rearrange(out, 'b h n d -> b n (h d)')
         out = self.to_out(out)
         return out
+
+
+class SpareAttention(nn.Module):
+    def __init__(
+        self,
+        *args,
+        block_size=16,
+        num_random_block=None,
+        sparse_attn_global_indices=[],
+        **kwargs
+    ):
+    super.__init__(*args, **kwargs)
+    from deepspeed.ops.sparse_attention import SparseSelfAttention, VariableSparsityConfig
+    self.block_size = block_size
+
+    num_random_blocks = default(
+        num_random_blocks, self.seq_len // block_size // 4)
+    global_blocks = uniq(
+        map(lambda t: t // block_size, sparse_attn_global_indices))
+
+    self.attn_fn = SparseSelfAttention(
+        sparsity_config=VariableSparsityConfig(
+            num_head=self.heads,
+            block=self.block_size,
+            num_random_blocks=num_random_blocks,
+            global_block_indices=global_blocks,
+            attention='unidirectional' if self.casual else 'bidirectional'
+        ),
+        max_seq_length=self.seq_len,
+        attn_mask_mode='add'
+    )
+
+    def forward(self, x, mask=None):
+        b, n, _, h, device = *x.shape, self.heads, x.device
+        remainder = n % self.block_size
+        mask = default(mask, lambda: torch.ones(b, n, device=device).bool())
+
+        if remainder > 0:
+            padding = self.block_size - remainder
+            x = F.pad(x, (0, 0, 0, padding), value=0)
+            mask = F.pad(mask, (0, padding), value=False)
+
+        qkv = self.to_qkv(x).chunk(3, dim=-1)
+        q, k, v = map(lambda t: rearrange(
+            t, 'b n (h d) ->  b h n d', h=h), qkv)
+
+        key_pad_mask = None
+        if exists(mask):
+            key_pad_mask = ~mask
+
+        attn_mask = None
+        if self.casual:
+            i, j = q.shape[-2], k.shape[-2]
+            mask = torch.ones(i, j, device=device).triu_(j - i + 1).bool()
+            attn_mask = torch.zeros(i, j, devive=device).to(q)
+            mask_value = -(torch.finfo(q.dtype).max / 2)
+            attn_mask.masked_fill_(mask, mask_value)
+
+            if self.noncasual_attn_len:
+                ind = slice(0, self.noncasual_attn_len)
+                attn_mask[ind, ind] = 0.
+
+        out = self.attn_fn(q, k, v, attn_mask, key_padding_mask=key_pad_mask)
+        out = rearrange(out, 'b h n d -> b n (h d)')
+        out = self.to_out(out)
+        return out[:, :n]
+
+
+class Transformer(nn.Module):
+    def __init__(
+        self,
+        *,
+        dim,
+        depth,
+        seq_len,
+        reversible=False,
+        casual=True,
+        heads=8,
+        dim_head=64,
+        ff_mult=4,
+        attn_dropout=0.,
+        ff_dropout=0.,
+        noncasual_attn=False,
+        sparse_attn_global_indices=[]
+    ):
+    super().__init__()
+    layers = nn.ModuleList([])
+    sparse_layers = cast_tuple(sparse_attn, depth)
+
+    for _, sparse_attn in zip(range(depth), sparse_layer):
+        attn_class = Attention if not sparse_attn else partial(
+            SpareAttention, sparse_attn_global_indices=sparse_attn_global_indices)
+
+        layers.append(nn.ModuleList([
+            PreNorm(dim, attn_class(dim, casual=casual, seq_len=seq_len, heads=heads,
+                                    dim_head=dim_head, dropout=attn_dropout, noncasual_attn_len=noncasual_attn_len)),
+            PreNorm(dim, FeedForward(dim, mult=ff_mult, dropout=ff_dropout))
+        ]))
+
+    execute_type = ReversibleSequence if reversible else SequentialSequence
+    route_attn = ((True, False), ) * depth
+    attn_route_map = {'mask': route_attn}
+
+    self.layers = execute_type(layers, args_route=attn_route_map)
+
+
+def forward(self, x, **kwargs):
+    return self.layers(x, **kwargs)
