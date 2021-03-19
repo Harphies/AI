@@ -14,6 +14,8 @@
 - Single Shot Detection (SSD)
 - Histogram of oriented gradient (HOG)
 - YOLO (You only look once)
+- [VISSL](https://vissl.readthedocs.io/en/v0.1.5/)
+- [Detectron2](https://towardsdatascience.com/object-detection-in-6-steps-using-detectron2-705b92575578)
 
 ## Some Image processing tasks
 
