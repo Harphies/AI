@@ -16,7 +16,7 @@ Py**T**orch **Im**age **M**odels (`timm`) is a collection of image models, layer
 
 ## Models
 
-All model architecture families include variants with pretrained weights. Some [training hparams](https://rwightman.github.io/pytorch-image-models/training_hparams_examples) to get started.
+All model architecture families include variants with pretrained weights. Some [training hparams](https://rwightman.github.io/pytorch-image-models/training_hparam_examples) to get started.
 
 A full version of the list below with source link can be found in the [documentation](https://rwightman.github.io/pytorch-image-models/models/).
 
