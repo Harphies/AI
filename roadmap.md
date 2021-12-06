@@ -2,9 +2,9 @@
 
 # Notes :
 
-- Decide on what you need Artifical Intelligence/Machine Learning for.
-- Decide on what you want to purse as it requires different skill set to achive them and different paths
-  - Enginer Path? (Focus on Applications and Industry)
+- Decide on what you need Artificial Intelligence/Machine Learning for.
+- Decide on what you want to purse as it requires different skill set to achieve them and different paths
+  - Engineer Path? (Focus on Applications and Industry)
   - Research Path? (You Need a Ph.D)
 
 # Engineer Path

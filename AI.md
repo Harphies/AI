@@ -6,7 +6,7 @@
 - Data Analysis
   - Data Exploration and Visualization for identifying missing values and all
 - Feature Engineering:
-  - Dealing with the identified missing values and preprocesing
+  - Dealing with the identified missing values and preprocessing
 - Feature Selection
   - Determining the right features of the data needed for the learning algorithm to perform well
 - Model Development
