@@ -5,6 +5,7 @@ from functools import wraps, partial
 
 import torch
 from torch import nn
+from torch._C import R
 import torch.nn.functional as F
 from torch.nn.modules import module
 
@@ -17,7 +18,7 @@ def exists(val):
     return val is not None
 
 
-def defaults(val, default):
+def default(val, default):
     return val if exists(val) else default
 
 
@@ -162,3 +163,166 @@ class NetWrapper(nn.Module):
         assert layer is not None, f'hidden layer ({self.layer}) not found'
         handle = layer.register_forward_hook(self._hook)
         self.hook_registered = True
+
+    @singleton('projector')
+    def _get_projector(self, hidden):
+        _, dim = hidden.shape
+        projector = MLP(dim, self.output_dim,
+                        self.projection_num_layers, self.projection_hidden_size)
+        return projector.to(hidden)
+
+    def get_embedding(self, x):
+        if self.layer == -1:
+            return self.net(x)
+
+        if not self.hook_registered:
+            self._register_hook()
+
+        self.hidden.clear()
+        _ = self.net(x)
+        hidden = self.hidden[x.device]
+        self.hidden.clear()
+
+        assert hidden is not None, f'hidden layer {self.layer} never emitted an output'
+        return hidden
+
+    def forward(self, x, return_projection=True):
+        embed = self.get_embedding(x)
+        if not return_projection:
+            return embed
+
+        projector = self._get_projector(embed)
+        return projector(embed), embed
+
+
+# main class
+class Dino(nn.Module):
+    def __in__(
+        self,
+        net,
+        image_size,
+        hidden_layers=-2,
+        projection_hidden_size=256,
+        num_classes_K=65336,
+        projection_layers=4,
+        student_temp=0.9,
+        teacher_temp=0.04,
+        local_upper_crop_scale=0.5,
+        global_lower_crop_scale=0.5,
+        moving_average_decay=0.9,
+        center_moving_average_decay=0.9,
+        augment_fn=None,
+        augment_fn2=None
+    ):
+        super().__init__()
+        self.net = net
+
+        # default BYOL augmentation
+        DEFAULT_AUG = torch.nn.Sequential(
+            RandomApply(
+                T.ColorJitter(0.8, 0.8, 0.8, 0.2),
+                p=0.3
+            ),
+            T.RandomGrayscale(p=0.2),
+            T.RandomHorizontalFlip(),
+            RandomApply(
+                T.GaussianBlur((3, 3), (1.0, 2.0)),
+                p=0.2
+            ),
+            T.Normalize(
+                mean=torch.tensor([0.485, 0.456, 0.406]),
+                std=torch.tensor([0.229, 0.224, 0.225])
+            )
+        )
+
+        self.augment1 = default(augment_fn, DEFAULT_AUG)
+        self.augment2 = default(augment_fn2, DEFAULT_AUG)
+
+        # local and global crops
+
+        self.local_crop = T.RandomResizedCrop(
+            (image_size, image_size), scale=(0.05, local_upper_crop_scale))
+        self.global_crop = T.RandomResizedCrop(
+            (image_size, image_size), scale=(global_lower_crop_scale, 1.))
+
+        self.sudent_encoder = NetWrapper(
+            net, num_classes_K, projection_hidden_size, projection_layers, layer=hidden_layers)
+
+        self.teacher_encoder = None
+        self.teacher_ema_updater = EMA(moving_average_decay)
+
+        self.register_buffer('teacher_centers', torch.zeros(1, num_classes_K))
+        self.register_buffer('last_teacher_centers',
+                             torch.zeros(1, num_classes_K))
+
+        self.teacher_centering_ema_updater = EMA(center_moving_average_decay)
+
+        self.student_temp = student_temp
+        self.teacher_temp = teacher_temp
+
+        # get device of network and make wrapper smme device
+        device = get_module_device(net)
+        self.to(device)
+
+        # send a mock image tensor to instantiate singleton parameters
+        self.forward(torch.rand(2, 3, image_size, image_size, device=device))
+
+    @singleton('teacher_encoder')
+    def _get_teacher_encoder(self):
+        teacher_encoder = copy.deepcopy(self.sudent_encoder)
+        set_requires_grad(teacher_encoder, False)
+        return teacher_encoder
+
+    def reset_moving_average(self):
+        del self.teacher_encoder
+        self.teacher_encoder = None
+
+    def update_moving_average(self):
+        assert self.teacher_encoder is not None, 'target encoder has not been created yet'
+        update_moving_average(self.teacher_ema_updater,
+                              self.teacher_encoder, self.student_encoder)
+
+        new_teacher_centers = self.teacher_centering_ema_updater.update_average(
+            self.teacher_centers, self.last_teacher_centers)
+        self.teacher_centers.copy_(new_teacher_centers)
+
+    def forward(
+        self,
+        x,
+        return_embedding=False,
+        return_projection=True,
+        student_temp=None,
+        teacher_temp=None
+    ):
+        if return_embedding:
+            return self.sudent_encoder(x, return_projection=return_projection)
+
+        image_one, image_two = self.augment1(x), self.augment2(x)
+
+        local_image_one, local_image_two = self.local_crop(
+            image_one), self.local_crop(image_two)
+        global_image_one, global_image_two = self.global_crop(
+            image_one), self.global_crop(image_two)
+
+        student_proj_one, _ = self.sudent_encoder(local_image_one)
+        student_proj_two, _ = self.student_encoder(local_image_two)
+
+        with torch.no_grad():
+            teacher_encoder = self.get_teacher_encoder()
+            teacher_proj_one, _ = teacher_encoder(global_image_one)
+            teacher_proj_two = teacher_encoder(global_image_two)
+
+        loss_fn_ = partial(
+            loss_fn,
+            student_temp=default(student_temp, self.student_temp),
+            teacher_temp=default(teacher_temp, self.teacher_temp),
+            centers=self.teacher_centers
+        )
+
+        teacher_logits_avg = torch.cat(
+            (teacher_proj_one, teacher_proj_two).mean(dim=0))
+        self.last_teacher_centers.copy_(teacher_logits_avg)
+
+        loss = (loss_fn_(teacher_proj_one, student_proj_two) +
+                loss_fn_(teacher_proj_two, student_proj_one)) / 2
+        return loss
