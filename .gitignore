@@ -1,6 +1,10 @@
 ./projects/detecting parkinson disease/parkinsons.data
 ./projects/Intelligent surveillance/train
 ./DS_Store
+.idea
+notebooks/.ipynb_checkpoints
+**/.ipynb_checkpoints/
+**/venv/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
